@@ -1,22 +1,22 @@
 apiVersion: apps/v1  
 kind: Deployment  
 metadata:  
-  name: frontend  
+  name: products  
   labels:  
-    app: frontend  
+    app: products  
 spec:  
   replicas: 1  
   selector:  
     matchLabels:  
-      app: frontend  
+      app: products  
   template:  
     metadata:  
       labels:  
-        app: frontend  
+        app: products  
     spec:  
       containers:  
-      - name: frontend  
-        image: null32sys/frontend:1.0.0  
+      - name: products 
+        image: null32sys/products:1.0.0  
         imagePullPolicy: Always  
         ports:  
         - containerPort: 8080  

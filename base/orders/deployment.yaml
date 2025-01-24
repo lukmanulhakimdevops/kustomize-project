@@ -15,8 +15,8 @@ spec:
         app: orders  
     spec:  
       containers:  
-      - name: frontend  
-        image: null32sys/frontend:1.0.0  
+      - name: orders  
+        image: null32sys/orders:1.0.0  
         imagePullPolicy: Always  
         ports:  
         - containerPort: 8080  
