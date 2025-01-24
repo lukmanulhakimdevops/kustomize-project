@@ -1,7 +1,7 @@
 apiVersion: v1  
 kind: ConfigMap  
 metadata:  
-  name: frontend-config  
+  name: products-config  
 data:  
   APP_ENV: production  
   LOG_LEVEL: info  
