@@ -11,10 +11,10 @@ patches:
       value: 1  
     - op: replace  
       path: /spec/template/spec/containers/0/image  
-      value: null32sys/frontend:dev  
+      value: null32sys/orders:dev  
 - target:  
     kind: ConfigMap  
-    name: frontend-config  
+    name: orders-config  
   patch: |-  
     - op: replace  
       path: /data/APP_ENV  
